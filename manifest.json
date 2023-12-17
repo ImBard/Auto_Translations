@@ -1,0 +1,29 @@
+{
+  "name": "Auto translation",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "This is an amazing extension that will translate any text on the page into whatever language you want!",
+  "icons": {
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ]
+}

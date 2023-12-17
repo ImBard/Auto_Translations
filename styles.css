@@ -1,0 +1,8 @@
+#myTooltip {
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
